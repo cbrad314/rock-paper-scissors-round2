@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
-    <script src="javascript.js" defer></script>
+    <h1 style="text-align: center;">Rock, Paper, Scissors against the Computer</h2>
+    <p style="text-align: center;">The first to win <input style="text-align: right;" type="number" min="1" max="20" step="1" value="5"/> rounds wins the game!</p>
+    <div class="container1">
+        <h2>Choose your weapon!</h2>
+        <div class="choices container2">
+            <button class="Rock"> <i class="fa-solid fa-hand-back-fist"></i></i> Rock</button>
+            <button class="Paper"> <i class="fa-solid fa-hand"></i> Paper</button>
+            <button class="Scissors"> <i class="fa-solid fa-hand-scissors"></i> Scissors</button>
+        </div>
+    </div>
+    <div class="container1">
+        <h2 class="round">Round:</h2>
+        <div class="players container2">
+            <div class="human-choice container2">
+                <div class="fa-solid fa-user"> You</div>
+                <div class="human-choice"></div>
+            </div>
+            <div style="border: 0;">vs</div>
+            <div class="computer-choice container2">
+                <div class="fa-solid fa-robot"> Computer</div>
+                <div class="computer-choice"></div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="round-results"></div>
+        </div>
+    </div>
+    <div class="container1 game">
+        <h2>Game Results</h2>
+        <div class="game-score"></div>
+        <button class="reset-game">Reset Game</button>
+    </div>
+
 </body>
 </html>

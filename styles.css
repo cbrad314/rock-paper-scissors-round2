@@ -1,0 +1,71 @@
+h2 {
+    text-align: center;
+
+}
+div {
+    padding: 5px;
+    margin: 4px;
+    text-align: center;
+    vertical-align: middle;
+    flex: 1;
+}
+.container1 {
+    border: 1px solid gray;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    padding: 20px;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    flex: 1;
+    margin: 4px;
+    padding: 10px;
+}
+button {
+    font-size: large;
+}
+  .choices > button {
+    flex: 1;
+    display: block;
+    border: 2px solid;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+}
+  .players > div {
+    flex: 1;
+    border: 2px solid;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+}
+  .players > .container2 {
+    flex: 2;
+    padding: 5px;
+    margin: 5px;
+    flex-direction: column;
+}
+
+
+.players > .human-choice > .human-choice, .players > .computer-choice > .computer-choice {
+    flex: 1;
+}
+.game {
+    flex-direction: column;
+}
+.reset-game {
+    text-align: center;
+    display: block;
+    flex: 1;
+}
+.game-score {
+    text-align: center;
+    flex:2;
+    vertical-align:middle;
+}
